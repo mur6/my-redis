@@ -79,12 +79,6 @@ checksum = "ae44d1a3d5a19df61dd0c8beb138458ac2a53a7ac09eba97d55592540004306b"
 
 [[package]]
 name = "bytes"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0dcbc35f504eb6fc275a6d20e4ebcda18cf50d40ba6fabff8c711fa16cb3b16"
-
-[[package]]
-name = "bytes"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b700ce4376041dcd0a327fd0097c41095743c4c8af8887265942faf1100bd040"
@@ -221,7 +215,7 @@ checksum = "1a1780f32b80b7b7f31f2cb3cb7c2a3c31a1bbc030b285c5f50667a92f7a3378"
 dependencies = [
  "async-stream",
  "atoi",
- "bytes 1.0.1",
+ "bytes",
  "structopt",
  "tokio",
  "tokio-stream",
@@ -257,7 +251,7 @@ dependencies = [
 name = "my-redis"
 version = "0.1.0"
 dependencies = [
- "bytes 0.6.0",
+ "bytes",
  "mini-redis",
  "tokio",
 ]
@@ -571,7 +565,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0ca04cec6ff2474c638057b65798f60ac183e5e79d3448bb7163d36a39cff6ec"
 dependencies = [
  "autocfg",
- "bytes 1.0.1",
+ "bytes",
  "libc",
  "memchr",
  "mio",
